@@ -1,6 +1,6 @@
-name: Upload Python Package
+name: Upload package
 on:
-  release:
+    registry_package:
 permissions:
   contents: read
 jobs:
