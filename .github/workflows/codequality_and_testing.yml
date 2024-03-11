@@ -17,6 +17,7 @@ jobs:
         run: |
           isort --profile black src/ --check --diff && black src/ --check --diff
   testing:
+    needs: codequality
     runs-on: ubuntu-latest
     strategy:
       matrix:
