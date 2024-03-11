@@ -1,4 +1,4 @@
-name: Codequality and testing
+name: Push changes
 on: [push, pull_request]
 jobs:
   codequality_and_tests:
