@@ -26,5 +26,5 @@ jobs:
         pip install build
     - name: Build package
       run: python -m build
-    - name: Publish package distributions to TestPyPI
+    - name: Publish package distributions to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
