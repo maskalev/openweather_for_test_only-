@@ -1,5 +1,5 @@
 name: Codequality and testing
-on: [push]
+on: [workflow_call]
 jobs:
   codequality:
     runs-on: ubuntu-latest
