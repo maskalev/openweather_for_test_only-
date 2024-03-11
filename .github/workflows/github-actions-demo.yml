@@ -1,4 +1,4 @@
-name: Python package
+name: Codequality and testing
 on: [push]
 jobs:
   build:
