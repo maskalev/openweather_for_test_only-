@@ -11,6 +11,7 @@ jobs:
   deploy:
     needs: [codequality_and_testing]
     runs-on: ubuntu-latest
+    environment: release
     permissions:
       id-token: write
     steps:
