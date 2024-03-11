@@ -6,7 +6,10 @@ on:
 permissions:
   contents: read
 jobs:
+  codequality_and_tests:
+    uses: ./.github/workflows/codequality_and_testing.yml
   deploy:
+    needs: [codequality_and_tests]
     runs-on: ubuntu-latest
     permissions:
       id-token: write
