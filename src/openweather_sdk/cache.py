@@ -4,7 +4,6 @@ import time
 def _get_cur_time():
     return int(time.time())
 
-
 class _ClientCache:
     """A class to work with client's cache"""
 
