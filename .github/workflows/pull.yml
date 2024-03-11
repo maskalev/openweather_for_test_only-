@@ -2,4 +2,4 @@ name: Codequality and testing
 on: [push, pull_request]
 jobs:
   codequality_and_tests:
-    uses: ./.github/workflows/tests.yml
+    uses: ./.github/workflows/codequality_and_testing.yml
