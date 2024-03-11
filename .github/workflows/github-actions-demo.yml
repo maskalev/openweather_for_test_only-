@@ -19,6 +19,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements-test.txt
           pip install -r requirements.txt
+      - name: Codequality
+        run: |
+          isort --profile black src/ --check --diff && black src/ --check --diff
       - name: Test with pytest
         run: |
           pytest .
